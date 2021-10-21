@@ -1,0 +1,40 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MovieTitleText">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/manrope_bold</item>
+        <item name="android:textColor">@color/textColorTitle</item>
+    </style>
+
+    <style name="MovieSubTitleText">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/manrope_bold</item>
+        <item name="android:textColor">@color/textColorSubTitle</item>
+    </style>
+
+    <style name="MovieOverviewText">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/manrope_regular</item>
+        <item name="android:textColor">@color/textColorTitle</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="FullScreenDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom_out</item>
+    </style>
+
+    <style name="MyAppDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+</resources>

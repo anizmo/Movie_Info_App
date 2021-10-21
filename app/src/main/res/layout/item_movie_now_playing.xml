@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    >
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="0dp"
+        app:cardCornerRadius="4dp"
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/movie_poster_container"
+                android:layout_width="130dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="4dp"
+                android:layout_margin="5dp"
+                app:cardElevation="6dp">
+
+                <ImageView
+                    android:id="@+id/movie_poster"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/film_poster_placeholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/movie_title"
+                style="@style/MovieTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/movie_poster_container"
+                android:layout_marginStart="24dp"
+                android:layout_toRightOf="@id/movie_poster_container"
+                android:layout_marginLeft="24dp"
+                android:text="Movie Name"
+                />
+
+            <TextView
+                android:id="@+id/language_and_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MovieSubTitleText"
+                android:layout_toEndOf="@id/movie_poster_container"
+                android:layout_marginStart="24dp"
+                android:layout_toRightOf="@id/movie_poster_container"
+                android:layout_below="@id/movie_title"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="2dp"
+                android:text="English 18+"
+                />
+
+            <TextView
+                android:id="@+id/movie_release_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MovieSubTitleText"
+                android:layout_toEndOf="@id/movie_poster_container"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/movie_poster_container"
+                android:layout_below="@id/language_and_rating"
+                android:layout_marginLeft="24dp"
+                android:text="Release Date"
+                />
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BFBEBE"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_below="@id/movie_release_date"
+                android:layout_toRightOf="@id/movie_poster_container"
+                android:layout_toEndOf="@id/movie_poster_container"/>
+
+            <TextView
+                android:id="@+id/movie_overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/separator"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_toEndOf="@id/movie_poster_container"
+                android:layout_toRightOf="@id/movie_poster_container"
+                android:ellipsize="end"
+                android:maxLines="3"
+                style="@style/MovieSubTitleText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/book"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                android:paddingTop="8dp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:fontFamily="@font/manrope_bold"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/book_button_bg"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="24dp"
+                android:textSize="18sp"
+                android:layout_toRightOf="@id/movie_poster_container"
+                android:layout_below="@id/movie_overview"
+                android:layout_toEndOf="@id/movie_poster_container"
+                android:layout_alignBaseline="@id/movie_poster_container"
+                android:layout_marginLeft="24dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BMS Task</string>
+    <string name="similar_movies">Similar Movies</string>
+    <string name="label_reviews">Reviews</string>
+    <string name="see_cast_and_crew">Complete Cast and Crew</string>
+    <string name="book">BOOK</string>
+    <string name="all_reviews">Read All Reviews</string>
+    <string name="search_this_list">Search this list</string>
+    <string name="placeholder_online_search">Search Your Favourite Movies Online</string>
+    <string name="search_online">Search Online</string>
+</resources>
